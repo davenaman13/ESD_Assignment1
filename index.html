@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummy Haven - Order Your Favorite Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#d1c4e9">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="color:black">Yummy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="images/logo.jpg" alt="Bootstrap" width="30" height="24">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color:black">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">View Beverages</a></li>
+              <li><a class="dropdown-item" href="#">View Food items</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#" style="color:black">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="signup1.html" style="color:black">Signup</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="container-fluid bg-light text-center py-5">
+    <h1 class="display-4">Delicious Food Delivered to You!</h1>
+    <p class="lead">Order your favorite meals with just a few clicks.</p>
+  </div>
+
+  <!--Carousel-->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/c1.jpg" class="d-block w-100" height="700"  alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:yellowgreen"><b>Order Delecious Food</b></h5>
+          <p style="color:yellowgreen">Enjoy the delicacies of various states!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/c2.jpg" class="d-block w-100" height="700" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:yellowgreen"><b>Freshly prepared food delivered within minutes</b></h5>
+          <p style="color:yellowgreen">Enjoy the masterpiece by our chefs specially curated for you.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/c3.jpg" class="d-block w-100" height="700" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:yellowgreen "><b>ORDER NOW!</b></h5>
+          <p style="color:yellowgreen">Don't miss out on the opportunity to get exclusive 10% off on your first order</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Food Listing Section -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Our Menu</h2>
+    <div class="row">
+      <!-- Food Card Example -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/burger.jpg" class="card-img-top" alt="Burger">
+          <div class="card-body">
+            <h5 class="card-title">Classic Cheese Burger</h5>
+            <p class="card-text">Juicy paneer patty with fresh vegetables and cheese.</p>
+            <p><strong>Price:</strong> Rs.299 Only</p>
+            <button class="btn btn-primary w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more food items as needed in similar format -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/pizza.jpg" class="card-img-top" alt="Pizza">
+          <div class="card-body">
+            <h5 class="card-title">Margherita Pizza</h5>
+            <p class="card-text">Classic Italian pizza with fresh mozzarella and basil.</p>
+            <p><strong>Price:</strong> Rs. 499 Only</p>
+            <button class="btn btn-primary w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/pasta.jpg" class="card-img-top" alt="Pasta">
+          <div class="card-body">
+            <h5 class="card-title">Creamy Pasta</h5>
+            <p class="card-text">Rich and creamy pasta with mushrooms and garlic.</p>
+            <p><strong>Price:</strong> Rs. 399 Only</p>
+            <button class="btn btn-primary w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="images/milkshake.jpg" class="card-img-top" alt="Milkshake">
+        <div class="card-body">
+          <h5 class="card-title">Thick Shakes</h5>
+          <p class="card-text">Classic choco brownie shake served with nutella.</p>
+          <p><strong>Price:</strong> Rs. 299 Only</p>
+          <button class="btn btn-primary w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="images/momos.jpg" class="card-img-top" alt="Momos">
+        <div class="card-body">
+          <h5 class="card-title">Momos</h5>
+          <p class="card-text">Spicy Hot momos served with red schezwan cutney.</p>
+          <p><strong>Price:</strong> Rs. 199 Only</p>
+          <button class="btn btn-primary w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="images/samosa.jpg" class="card-img-top" alt="Samosa">
+        <div class="card-body">
+          <h5 class="card-title">Samosa</h5>
+          <p class="card-text">Classic Samosa served with chutney.</p>
+          <p><strong>Price:</strong> Rs. 49 Only</p>
+          <button class="btn btn-primary w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Yummy. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
